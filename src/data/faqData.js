@@ -1,8 +1,8 @@
 export const faqs = [
   {
-    question: "Which health plans do you cover?",
+    question: "هل يجب حجز موعد مسبق؟",
     answer:
-      "We work with a wide network of health plans and private insurance, ensuring options tailored to every need.",
+      "عم، يفضل الاتصال بنا مسبقاً لضمان تقديم أفضل رعاية لحيوانكم الأليف، باستثناء حالات الطوارئ.",
   },
   {
     question: "How can I enroll?",
