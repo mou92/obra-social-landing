@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="تواصل معنا - عيادة الدكتور بهلولي">
+<Layout>
   <section class="px-6 py-20 max-w-7xl mx-auto" dir="rtl">
     <h2
       class="text-[#2F855A] text-3xl md:text-4xl font-extrabold text-center uppercase mb-12"
@@ -14,25 +14,16 @@ import Layout from "../layouts/Layout.astro";
       <div
         class="w-full md:w-1/2 text-center md:text-right flex flex-col justify-center"
       >
-        <p class="text-gray-700 text-2xl font-bold leading-9 mb-6">
-          اترك لنا رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن. فريقنا الطبي 
-          مستعد لتقديم الاستشارة اللازمة ومرافقتكم في كل خطوة لرعاية حيواناتكم.
+        <p class="text-gray-700 text-2xl font-bold leading-7 mb-6">
+          اترك لنا رسالتك وسنرد عليك في أقرب وقت. فريقنا الطبي 
+          مستعد لتقديم استشارات مخصصة ومرافقتك في كل خطوة لضمان صحة حيوانك الأليف.
         </p>
-        
-        <div class="bg-green-50 p-6 rounded-2xl border-r-4 border-[#2F855A]">
-          <p class="text-gray-700 text-xl font-bold mb-4">
-             📍 الموقع: برج بوعريريج، الجزائر
-          </p>
-          <p class="text-gray-700 text-xl font-bold mb-4">
-             📞 الهاتف: 0560190769 (أضف رقمك هنا)
-          </p>
-          <p class="text-gray-700 text-xl font-bold">
-             📧 البريد: contact@dr-bahlouli-vet.com
-          </p>
-        </div>
+        <p class="text-gray-700 text-2xl font-bold leading-7">
+          يمكنك أيضاً التواصل معنا مباشرة عبر الهاتف أو البريد الإلكتروني إذا كنت تفضل ذلك.
+        </p>
       </div>
 
-      <div class="w-full md:w-1/2 bg-gray-50 p-8 rounded-2xl shadow-sm">
+      <div class="w-full md:w-1/2 bg-gray-50  rounded-2xl">
         <form>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col">
@@ -44,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
                 id="nombre"
                 name="nombre"
                 placeholder="اسمك"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
                 required
               />
             </div>
@@ -58,7 +49,7 @@ import Layout from "../layouts/Layout.astro";
                 id="apellido"
                 name="apellido"
                 placeholder="لقبك"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
                 required
               />
             </div>
@@ -72,7 +63,7 @@ import Layout from "../layouts/Layout.astro";
                 id="correo"
                 name="correo"
                 placeholder="email@example.com"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
                 required
               />
             </div>
@@ -86,7 +77,8 @@ import Layout from "../layouts/Layout.astro";
                 id="telefono"
                 name="telefono"
                 placeholder="05XXXXXXXX"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
+                dir="ltr"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F] text-right"
               />
             </div>
           </div>
@@ -100,16 +92,16 @@ import Layout from "../layouts/Layout.astro";
               name="mensaje"
               rows="5"
               placeholder="اكتب استفسارك هنا..."
-              class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2F855A] resize-none"
+              class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#F9C74F] resize-none"
               required></textarea>
           </div>
 
-          <div class="text-center md:text-left mt-6">
+          <div class="text-center md:text-left mt-4">
             <button
               type="submit"
-              class="bg-[#197e37] text-white hover:bg-[#095c22] font-bold px-14 py-3 rounded-full cursor-pointer transition shadow-md"
+              class="bg-[#197e37] text-white hover:bg-[#095c22] font-bold px-14 py-3 rounded-full cursor-pointer transition"
             >
-              إرسال الرسالة
+              إرسال
             </button>
           </div>
         </form>
