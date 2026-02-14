@@ -1,4 +1,7 @@
+@@ -0,0 +1,123 @@
+---
 import Layout from "../layouts/Layout.astro";
+---
 
 <Layout>
   <section class="px-6 py-20 max-w-7xl mx-auto">
@@ -44,7 +47,8 @@ import Layout from "../layouts/Layout.astro";
                 class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
                 required
               />
-			  
+            </div>
+
             <!-- Apellido -->
             <div class="flex flex-col">
               <label for="apellido" class="font-semibold text-[#2F855A] mb-2"
@@ -87,7 +91,9 @@ import Layout from "../layouts/Layout.astro";
                 placeholder="+54 9 ..."
                 class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
               />
-			  
+            </div>
+          </div>
+
           <!-- Mensaje -->
           <div class="flex flex-col mt-6">
             <label for="mensaje" class="font-semibold text-[#2F855A] mb-2"
@@ -100,7 +106,8 @@ import Layout from "../layouts/Layout.astro";
               placeholder="Escribe tu consulta aquí..."
               class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#F9C74F] resize-none"
               required></textarea>
-			  
+          </div>
+
           <!-- Botón -->
           <div class="text-center md:text-right mt-4">
             <button
@@ -109,5 +116,9 @@ import Layout from "../layouts/Layout.astro";
             >
               Enviar
             </button>
-			</section>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </Layout> 
