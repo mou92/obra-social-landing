@@ -2,21 +2,21 @@ export const faqs = [
   {
     question: "هل يجب حجز موعد مسبق؟",
     answer:
-      "عم، يفضل الاتصال بنا مسبقاً لضمان تقديم أفضل رعاية لحيوانكم الأليف، باستثناء حالات الطوارئ.",
+      "نعم، يفضل الاتصال بنا مسبقاً لضمان تقديم أفضل رعاية لحيوانكم الأليف، باستثناء حالات الطوارئ.",
   },
   {
-    question: "How can I enroll?",
+    question: "ما هي ساعات عمل العيادة؟",
     answer:
-      "You can start the process by filling out our contact form or calling us directly. We will guide you every step of the way.",
+      "نحن متاحون لخدمتكم من السبت إلى الخميس،من الساعة 9 صباحا اللى 9 مساءا مع توفير خدمة الاستعجالات الليلية عند الضرورة.",
   },
   {
-    question: "Do you provide consultations nationwide?",
+    question: "هل توفر العيادة خدمات التلقيح؟",
     answer:
-      "Yes, we offer in-person care at our locations as well as virtual consultations across the country.",
+      "نعم، نوفر كافة أنواع التلقيحات الضرورية والكتيبات الصحية الرسمية..",
   },
   {
-    question: "Do you have family plans?",
+    question: "؟هل توجد خدمة تعقيم القطط",
     answer:
-      "Yes, we offer family coverage with special benefits and discounts for family groups.",
+      "نعم وجميع انواع الجراحات.",
   },
 ];
