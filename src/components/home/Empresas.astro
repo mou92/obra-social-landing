@@ -4,22 +4,25 @@ import { empresas } from "../../data/empresasData.js";
 
 <section class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto text-center px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-      خدماتنا الطبية
+    <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-10">
+      خدماتنا الطبية المتخصصة
     </h2>
 
-    <div
-      class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center items-center"
-    >
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center items-start">
       {
         empresas.map((empresa) => (
-          <div class="flex font-bold items-center justify-center grayscale hover:grayscale-0 transition duration-300">
-            <img
-              src={empresa.logo}
-              alt={empresa.nombre}
-              class="h-14 md:h-16 object-contain rounded-4xl"
-              loading="lazy"
-            />
+          <div class="flex flex-col items-center group transition duration-300">
+            <div class="bg-white p-4 rounded-2xl shadow-sm mb-4 group-hover:shadow-md transition-shadow">
+              <img
+                src={empresa.logo}
+                alt={empresa.nombre}
+                class="h-16 md:h-20 object-contain grayscale group-hover:grayscale-0 transition duration-300"
+                loading="lazy"
+              />
+            </div>
+            <span class="text-gray-800 font-bold text-lg md:text-xl">
+              {empresa.nombre}
+            </span>
           </div>
         ))
       }
