@@ -1,28 +1,52 @@
 ---
-// Header.astro
+
+import headerImg from "../../assets/img/careHeader.jpg";
+
 ---
-<section class="relative h-[80vh] flex items-center justify-center text-center px-4">
-  {/* صورة الخلفية مع تعتيم خفيف لتبرز النصوص */}
-  <div class="absolute inset-0 z-0">
-    <img 
-      src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-      alt="العيادة" 
-      class="w-full h-full object-cover brightness-[0.4]"
-    />
-  </div>
-  
-  <div class="relative z-10 max-w-4xl">
-    {/* تم تغيير اللون هنا إلى text-green-500 ليكون واضحاً وجميلاً */}
-    <h1 class="text-4xl md:text-7xl font-bold text-green-500 mb-6 drop-shadow-md">
+
+
+
+<header
+
+  class="relative h-screen bg-cover bg-center"
+
+  style={{ backgroundImage: `url(${headerImg.src})` }}
+
+>
+
+  <div class="absolute inset-0 bg-black/80"></div>
+
+  <main
+
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
+
+  >
+
+    <h1 class="text-4xl md:text-6xl font-bold . mb-6">
+
       عيادة الدكتور بهلولي مصعب البيطرية
+
     </h1>
-    
-    <p class="text-xl md:text-2xl text-white mb-10 leading-relaxed">
+
+    <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold">
+
       نقدم رعاية طبية متكاملة وشاملة لحيواناتكم الأليفة بأحدث التقنيات.
+
     </p>
-    
-    <a href="tel:+213XXXXXX" class="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg inline-block">
+
+    <a
+
+      href="/contact"
+
+      class="px-6 py-3 bg-[#2F855A] hover:bg-green-800 text-white font-semibold rounded-3xl transition"
+
+    >
+
       اتصل بنا الآن
+
     </a>
-  </div>
-</section>
+
+  </main>
+
+</header>
+
