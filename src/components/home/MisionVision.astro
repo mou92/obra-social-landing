@@ -1,48 +1,34 @@
----
-import Badge from "./badge.astro";
-
-const values = [
-  "Commitment",
-  "Empathy",
-  "Transparency",
-  "Trust",
-  "Responsibility",
-  "Innovation",
-  "Quality",
-  "Teamwork",
-  "Respect",
-];
----
-
-<section
-  class="relative overflow-hidden bg-[#2F855A] text-white px-6 py-16 md:px-20 flex flex-col gap-16"
->
-  <!-- Mission and Vision -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
+<section class="bg-[#2F855A] text-white py-20 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 text-right" dir="rtl">
+    
     <div>
-      <h2 class="text-4xl font-bold mb-4">Mission</h2>
-      <p class="text-lg leading-relaxed font-semibold">
-        Provide personalized guidance on health coverage, offering reliable and
-        accessible solutions that ensure the well-being of individuals and their
-        families.
+      <h2 class="text-4xl font-bold mb-6">رؤيتنا</h2>
+      <p class="text-xl leading-relaxed opacity-90">
+        أن نكون الوجهة الأولى والرائدة في تقديم الخدمات البيطرية في المنطقة، متميزين بالجودة الإنسانية، الشفافية، والالتزام الكامل بالصحة الشاملة لحيواناتكم.
       </p>
     </div>
 
     <div>
-      <h2 class="text-4xl font-bold mb-4">Vision</h2>
-      <p class="text-lg leading-relaxed font-semibold">
-        To be leaders in the health insurance sector, standing out for human
-        quality, transparency, and commitment to the comprehensive health of our
-        members.
+      <h2 class="text-4xl font-bold mb-6">رسالتنا</h2>
+      <p class="text-xl leading-relaxed opacity-90">
+        تقديم إرشادات ورعاية طبية مخصصة، وتوفير حلول موثوقة ومتاحة تضمن سلامة ورفاهية الحيوانات الأليفة وعائلاتهم.
       </p>
     </div>
+
   </div>
 
-  <!-- Values -->
-  <div class="flex flex-col items-center md:items-start gap-6">
-    <h2 class="text-2xl font-bold tracking-wide">VALUES</h2>
-    <div class="flex flex-wrap justify-center md:justify-start gap-3">
-      {values.map((value) => <Badge label={value} />)}
+  <div class="max-w-6xl mx-auto mt-20 text-right" dir="rtl">
+    <h3 class="text-2xl font-bold mb-8 text-left md:text-right uppercase tracking-widest">قيمنا</h3>
+    <div class="flex flex-wrap justify-start md:justify-end gap-3">
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الالتزام</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">التعاطف</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الشفافية</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الثقة</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">المسؤولية</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الابتكار</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الجودة</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">العمل الجماعي</span>
+      <span class="bg-white text-[#2F855A] px-6 py-2 rounded-full font-bold">الاحترام</span>
     </div>
   </div>
 </section>
