@@ -1,16 +1,16 @@
-<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 mb-5">
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 mb-5" dir="rtl">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-    <!-- Logo -->
     <a href="/" class="flex items-center">
-      <div
-        class="flex flex-col items-center md:items-start text-center md:text-left"
-      >
-        <img src="/logo.svg" alt="Logo" class="w-12 h-12" />
+      <div class="flex flex-col items-center md:items-start text-center md:text-right">
+        <img 
+          src="/logo-cabinet-transparent.png" 
+          alt="لوغو عيادة الدكتور بهلولي" 
+          class="w-20 h-auto md:w-24 transition-transform hover:scale-105" 
+        />
       </div>
     </a>
 
-    <!-- Links md+ -->
-    <ul class="hidden md:flex space-x-8">
+    <ul class="hidden md:flex space-x-8 space-x-reverse">
       <li>
         <a
           href="/"
@@ -18,7 +18,7 @@
         >
           الرئيسية
           <span
-            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
+            class="absolute right-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
           ></span>
         </a>
       </li>
@@ -29,29 +29,26 @@
         >
           المقالات
           <span
-            class="absolute left-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
+            class="absolute right-0 -bottom-2 w-0 h-0.5 bg-[#2F855A] transition-all duration-300 group-hover:w-full"
           ></span>
         </a>
       </li>
       <li>
         <a
           href="/contact"
-          class="px-4 py-2 text-white font-semibold rounded-3xl bg-[#2F855A] hover:bg-[#186e43] transition"
+          class="px-6 py-2 text-white font-semibold rounded-3xl bg-[#2F855A] hover:bg-[#186e43] transition shadow-sm"
         >
           اتصل بنا
         </a>
       </li>
     </ul>
 
-    <!-- Menú hamburguesa móvil -->
     <div class="md:hidden relative">
       <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
-      <!-- Botón hamburguesa / cierre -->
       <label for="menu-toggle" class="cursor-pointer z-50 flex items-center">
-        <!-- menu móvil  -->
         <svg
-          class="h-6 w-6 text-gray-700 peer-checked:hidden"
+          class="h-7 w-7 text-gray-700 peer-checked:hidden"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -64,9 +61,8 @@
             d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
 
-        <!-- X -->
         <svg
-          class="h-6 w-6 text-gray-700 hidden peer-checked:block"
+          class="h-7 w-7 text-gray-700 hidden peer-checked:block"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -80,18 +76,16 @@
         </svg>
       </label>
 
-      <!-- Overlay semi-transparente -->
       <label
         for="menu-toggle"
         class="fixed inset-0 bg-black/60 hidden peer-checked:block cursor-pointer z-40"
       ></label>
 
-      <!-- Menú lateral -->
       <div
         class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-50"
       >
-        <!-- Botón de cierre -->
-        <div class="flex justify-end p-4">
+        <div class="flex justify-between items-center p-4 border-b">
+          <span class="font-bold text-[#2F855A]">القائمة</span>
           <label for="menu-toggle" class="cursor-pointer">
             <svg
               class="h-6 w-6 text-gray-700"
@@ -109,27 +103,19 @@
           </label>
         </div>
 
-        <ul class="flex flex-col space-y-6 mt-4 ml-6">
+        <ul class="flex flex-col space-y-6 mt-6 px-6 text-right">
           <li>
-            <a
-              href="/"
-              class="text-gray-700 text-lg font-bold hover:text-[#2F855A]"
-              >Home</a
-            >
+            <a href="/" class="text-gray-700 text-lg font-bold hover:text-[#2F855A]">الرئيسية</a>
           </li>
           <li>
-            <a
-              href="/blog"
-              class="text-gray-700 text-lg font-bold hover:text-[#2F855A]"
-              >Blog</a
-            >
+            <a href="/blog" class="text-gray-700 text-lg font-bold hover:text-[#2F855A]">المقالات</a>
           </li>
           <li>
             <a
               href="/contact"
-              class="px-4 py-2 text-white font-semibold rounded-lg bg-[#2F855A] hover:bg-[#186e43] transition"
+              class="block text-center px-4 py-2 text-white font-semibold rounded-lg bg-[#2F855A] hover:bg-[#186e43] transition"
             >
-              Contact
+              اتصل بنا
             </a>
           </li>
         </ul>
