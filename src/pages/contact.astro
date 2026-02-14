@@ -1,124 +1,119 @@
-@@ -0,0 +1,123 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-  <section class="px-6 py-20 max-w-7xl mx-auto">
-    <!-- Título centrado -->
+<Layout title="تواصل معنا - عيادة الدكتور بهلولي">
+  <section class="px-6 py-20 max-w-7xl mx-auto" dir="rtl">
     <h2
       class="text-[#2F855A] text-3xl md:text-4xl font-extrabold text-center uppercase mb-12"
     >
-      Contáctanos
+      تواصل معنا
     </h2>
 
-    <!-- Contenedor principal -->
     <div class="flex flex-col md:flex-row items-start gap-12">
-      <!-- Texto -->
       <div
-        class="w-full md:w-1/2 text-center md:text-left flex flex-col justify-center"
+        class="w-full md:w-1/2 text-center md:text-right flex flex-col justify-center"
       >
-        <p class="text-gray-700 text-2xl font-bold leading-7 mb-6">
-          Déjanos tu mensaje y te responderemos a la brevedad. Nuestro equipo
-          está listo para ofrecerte asesoramiento personalizado y acompañarte en
-          cada paso del proceso.
+        <p class="text-gray-700 text-2xl font-bold leading-9 mb-6">
+          اترك لنا رسالتك وسنقوم بالرد عليك في أقرب وقت ممكن. فريقنا الطبي 
+          مستعد لتقديم الاستشارة اللازمة ومرافقتكم في كل خطوة لرعاية حيواناتكم.
         </p>
-        <p class="text-gray-700 text-2xl font-bold leading-7">
-          También podés comunicarte directamente por teléfono o correo si lo
-          preferís.
-        </p>
+        
+        <div class="bg-green-50 p-6 rounded-2xl border-r-4 border-[#2F855A]">
+          <p class="text-gray-700 text-xl font-bold mb-4">
+             📍 الموقع: برج بوعريريج، الجزائر
+          </p>
+          <p class="text-gray-700 text-xl font-bold mb-4">
+             📞 الهاتف: 0560190769 (أضف رقمك هنا)
+          </p>
+          <p class="text-gray-700 text-xl font-bold">
+             📧 البريد: contact@dr-bahlouli-vet.com
+          </p>
+        </div>
       </div>
 
-      <!-- Formulario -->
-      <div class="w-full md:w-1/2 bg-gray-50  rounded-2xl">
-        <form >
-          <!-- Grid de dos columnas -->
+      <div class="w-full md:w-1/2 bg-gray-50 p-8 rounded-2xl shadow-sm">
+        <form>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Nombre -->
             <div class="flex flex-col">
               <label for="nombre" class="font-semibold text-[#2F855A] mb-2"
-                >Nombre</label
+                >الاسم</label
               >
               <input
                 type="text"
                 id="nombre"
                 name="nombre"
-                placeholder="Tu nombre"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
+                placeholder="اسمك"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
                 required
               />
             </div>
 
-            <!-- Apellido -->
             <div class="flex flex-col">
               <label for="apellido" class="font-semibold text-[#2F855A] mb-2"
-                >Apellido</label
+                >اللقب</label
               >
               <input
                 type="text"
                 id="apellido"
                 name="apellido"
-                placeholder="Tu apellido"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
+                placeholder="لقبك"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
                 required
               />
             </div>
 
-            <!-- Correo -->
             <div class="flex flex-col">
               <label for="correo" class="font-semibold text-[#2F855A] mb-2"
-                >Correo electrónico</label
+                >البريد الإلكتروني</label
               >
               <input
                 type="email"
                 id="correo"
                 name="correo"
-                placeholder="tu@correo.com"
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
+                placeholder="email@example.com"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
                 required
               />
             </div>
 
-            <!-- Teléfono -->
             <div class="flex flex-col">
               <label for="telefono" class="font-semibold text-[#2F855A] mb-2"
-                >Teléfono</label
+                >رقم الهاتف</label
               >
               <input
                 type="tel"
                 id="telefono"
                 name="telefono"
-                placeholder="+54 9 ..."
-                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#F9C74F]"
+                placeholder="05XXXXXXXX"
+                class="border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#2F855A]"
               />
             </div>
           </div>
 
-          <!-- Mensaje -->
           <div class="flex flex-col mt-6">
             <label for="mensaje" class="font-semibold text-[#2F855A] mb-2"
-              >Mensaje</label
+              >رسالتك</label
             >
             <textarea
               id="mensaje"
               name="mensaje"
               rows="5"
-              placeholder="Escribe tu consulta aquí..."
-              class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#F9C74F] resize-none"
+              placeholder="اكتب استفسارك هنا..."
+              class="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#2F855A] resize-none"
               required></textarea>
           </div>
 
-          <!-- Botón -->
-          <div class="text-center md:text-right mt-4">
+          <div class="text-center md:text-left mt-6">
             <button
               type="submit"
-              class="bg-[#197e37] text-white hover:bg-[#095c22] font-bold px-14 py-3 rounded-full cursor-pointer transition"
+              class="bg-[#197e37] text-white hover:bg-[#095c22] font-bold px-14 py-3 rounded-full cursor-pointer transition shadow-md"
             >
-              Enviar
+              إرسال الرسالة
             </button>
           </div>
         </form>
       </div>
     </div>
   </section>
-</Layout> 
+</Layout>
