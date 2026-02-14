@@ -4,4 +4,7 @@ export const empresas = [
   { nombre: "تلقيحات وتحصينات دورية", logo: "https://placehold.co/150x80/198754/FFFFFF?text=MediTrust" },
   { nombre: "جراحة عامة", logo: "https://placehold.co/150x80/495057/FFFFFF?text=ObraMax" },
   { nombre: "مستلزمات حيوانات", logo: "https://placehold.co/150x80/495057/FFFFFF?text=ObraMax" },
+  { nombre: "جراحة اسنان", logo: "https://placehold.co/150x80/495057/FFFFFF?text=ObraMax" },
+  { nombre: "حراسة حيوانات", logo: "https://placehold.co/150x80/495057/FFFFFF?text=ObraMax" },
+  { nombre: "جواز سفر للحيوانات", logo: "https://placehold.co/150x80/495057/FFFFFF?text=ObraMax" },
 ];
