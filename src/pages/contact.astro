@@ -1,55 +1,62 @@
 ---
 // Contact.astro
 ---
-<section class="py-20 bg-white" dir="rtl">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-green-800 text-center mb-12">تواصل معنا</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
-        <form class="space-y-4">
-          <div class="grid grid-cols-2 gap-4">
+<section class="py-16 bg-gray-50" dir="rtl">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-green-800 mb-4">تواصل معنا</h2>
+      <div class="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      <div class="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+        <form class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-green-700 mb-2">الاسم</label>
-              <input type="text" placeholder="اسمك" class="w-full p-3 border rounded-lg focus:outline-green-500" />
+              <label class="block text-sm font-semibold text-gray-700 mb-2">الاسم</label>
+              <input type="text" placeholder="اسمك الكريم" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all" />
             </div>
             <div>
-              <label class="block text-green-700 mb-2">اللقب</label>
-              <input type="text" placeholder="لقبك" class="w-full p-3 border rounded-lg focus:outline-green-500" />
+              <label class="block text-sm font-semibold text-gray-700 mb-2">اللقب</label>
+              <input type="text" placeholder="لقبك" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all" />
             </div>
           </div>
-          
+
           <div>
-            <label class="block text-green-700 mb-2">رقم الهاتف</label>
-            <input type="tel" placeholder="05XXXXXXXX" class="w-full p-3 border rounded-lg focus:outline-green-500" />
+            <label class="block text-sm font-semibold text-gray-700 mb-2">رقم الهاتف</label>
+            <input type="tel" placeholder="0XXXXXXXXX" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all text-left" dir="ltr" />
           </div>
-          
+
           <div>
-            <label class="block text-green-700 mb-2">البريد الإلكتروني</label>
-            <input type="email" placeholder="email@example.com" class="w-full p-3 border rounded-lg focus:outline-green-500" />
+            <label class="block text-sm font-semibold text-gray-700 mb-2">رسالتك</label>
+            <textarea rows="4" placeholder="كيف يمكننا مساعدتك؟" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-green-500 focus:border-transparent outline-none transition-all resize-none"></textarea>
           </div>
-          
-          <div>
-            <label class="block text-green-700 mb-2">رسالتك</label>
-            <textarea rows="4" placeholder="اكتب استفسارك هنا..." class="w-full p-3 border rounded-lg focus:outline-green-500"></textarea>
-          </div>
-          
-          <button type="submit" class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 rounded-lg transition">
-            إرسال الرسالة
+
+          <button class="w-full bg-green-700 hover:bg-green-800 text-white font-bold py-4 rounded-xl shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+            إرسال الرسالة الآن
           </button>
         </form>
       </div>
 
-      <div class="flex flex-col justify-center text-right">
-        <h3 class="text-2xl font-bold text-gray-800 mb-4">اترك لنا رسالة وسنرد عليك في أقرب وقت.</h3>
-        <p class="text-gray-600 mb-6 leading-relaxed">
-          فريقنا الطبي مستعد لتقديم استشارات مخصصة ومرافقتك في كل خطوة لضمان صحة حيوانك الأليف.
-        </p>
-        <p class="text-gray-600 font-bold">
-          يمكنك أيضاً التواصل معنا مباشرة عبر الهاتف أو زيارة العيادة في برج بوعريريج.
-        </p>
+      <div class="space-y-8 pr-0 lg:pr-8">
+        <div>
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">نحن هنا لخدمتكم في برج بوعريريج</h3>
+          <p class="text-gray-600 leading-relaxed text-lg">
+            فريق عيادة الدكتور بهلولي مصعب مستعد لاستقبالكم وتقديم أفضل رعاية طبية لحيواناتكم الأليفة. لا تترددوا في طرح أي سؤال.
+          </p>
+        </div>
+        
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 bg-green-50 p-4 rounded-2xl">
+            <span class="text-2xl">📍</span>
+            <span class="text-gray-700 font-medium">برج بوعريريج، الجزائر</span>
+          </div>
+          <div class="flex items-center gap-4 bg-green-50 p-4 rounded-2xl">
+            <span class="text-2xl">📞</span>
+            <span class="text-gray-700 font-medium" dir="ltr">+213 (0) XXX XX XX XX</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
