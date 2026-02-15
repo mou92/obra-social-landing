@@ -1,50 +1,17 @@
----
-
 import headerImg from "../../assets/img/careHeader.jpg";
+<header class="relative h-screen bg-cover bg-center" style={{ backgroundImage: url(${headerImg.src}) }}>
 
----
+<div class="absolute inset-0 bg-black/80"></div>
 
+<main class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
 
+<h1 class="text-4xl md:text-6xl font-bold mb-6" style="color: #2F855A;">عيادة الدكتور بهلولي مصعب البيطرية</h1>
 
-<header
+<p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold">نقدم رعاية طبية متكاملة وشاملة لحيواناتكم الأليفة بأحدث التقنيات.</p>
 
-  class="relative h-screen bg-cover bg-center"
+انسخ السطر التالي وضعه مكان زر "اتصل بنا" القديم:
 
-  style={{ backgroundImage: `url(${headerImg.src})` }}
+<a href="tel:+213560190769" class="px-10 py-4 bg-[#2F855A] hover:bg-green-800 text-white font-bold rounded-full transition shadow-lg text-xl">اتصل بنا الآن</a>
 
->
-
-  <div class="absolute inset-0 bg-black/80"></div>
-
-  <main
-
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
-
-  >
-
-    <h1 class="text-4xl md:text-6xl font-bold mb-6" style="color: #2F855A;">
-  عيادة الدكتور بهلولي مصعب البيطرية
-</h1>
-
-    <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold">
-
-      نقدم رعاية طبية متكاملة وشاملة لحيواناتكم الأليفة بأحدث التقنيات.
-
-    </p>
-
-    <a
-
-      href="/contact"
-
-      class="px-6 py-3 bg-[#2F855A] hover:bg-green-800 text-white font-semibold rounded-3xl transition"
-
-    >
-
-      اتصل بنا الآن
-
-    </a>
-
-  </main>
-
+</main>
 </header>
-
