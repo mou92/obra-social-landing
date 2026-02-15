@@ -4,8 +4,41 @@
     <a href="/" class="flex items-center">
       <div
         class="flex flex-col items-center md:items-start text-center md:text-left"
-      >
-        <img src="/logo-bahlouli 2.png" alt="عيادة الدكتور بهلولي" class="w-12 h-12 object-contain" />
+      <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 mb-5" dir="rtl">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <a href="/" class="flex-shrink-0">
+      <img 
+        src="/logo-bahlouli.png" 
+        alt="عيادة الدكتور بهلولي" 
+        class="w-14 h-14 object-contain" 
+      />
+    </a>
+
+    <ul class="hidden md:flex items-center space-x-14 space-x-reverse">
+      <li>
+        <a href="/" class="text-gray-700 font-bold hover:text-[#2F855A] transition-colors">الرئيسية</a>
+      </li>
+      <li>
+        <a href="/blog" class="text-gray-700 font-bold hover:text-[#2F855A] transition-colors">المقالات</a>
+      </li>
+      <li>
+        <a href="/contact" class="px-8 py-2.5 text-white font-semibold rounded-full bg-[#2F855A] hover:bg-[#186e43] transition shadow-md">
+          اتصل بنا
+        </a>
+      </li>
+    </ul>
+
+    <div class="md:hidden">
+      <input id="menu-toggle" type="checkbox" class="peer hidden" />
+      <label for="menu-toggle" class="cursor-pointer">
+        <svg class="h-8 w-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </label>
+    </div>
+  </div>
+</nav>
 
     <!-- Links md+ -->
     <ul class="hidden md:flex space-x-8">
