@@ -16,17 +16,18 @@ const end = start + postsPerPage;
 const currentPosts = blogPosts.slice(start, end);
 ---
 
-<Base title="Blog" meta_title="Artículos legales | Legal Staff">
-  <section class="px-6 py-20 max-w-7xl mx-auto">
+<Base title="المقالات الطبية" meta_title="نصائح طبية للحيوانات | عيادة الدكتور بهلولي">
+  <section class="px-6 py-20 max-w-7xl mx-auto" dir="rtl">
+    
     <Breadcrumbs
       items={[
-        { label: "Inicio", href: "/" },
-        { label: "Blog", href: "/blog" },
+        { label: "الرئيسية", href: "/" },
+        { label: "المقالات", href: "/blog" },
       ]}
     />
 
     <h1 class="text-center text-[#2F855A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
-      Blog 
+      المقالات الطبية ونصائح العيادة 
     </h1>
 
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
