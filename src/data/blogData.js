@@ -22,7 +22,7 @@ export const blogPosts = [
   {
     title: "التغذية السليمة: مفتاح صحة الحيوانات",
     description: "كيف تختار الطعام المناسب لحيوانك الأليف؟ تعرف على الفرق بين الطعام المنزلي والمعلب.",
-    image: "https://images.unsplash.com/photo-1589924691106-073b697596cd?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1625793995159-59836c45c2ca?q=80&w=1331&auto=format&fit=crop",
     date: "12 فيفري 2026",
     category: "تغذية",
     slug: "pet-nutrition-guide",
