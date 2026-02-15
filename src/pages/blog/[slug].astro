@@ -12,16 +12,16 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-// Filtrar artículos relacionados
+// تصفية المقالات ذات الصلة
 const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
 ---
 
 <Base title={post.title}>
-  <article class="max-w-4xl mx-auto px-6 py-20">
+  <article class="max-w-4xl mx-auto px-6 py-20" dir="rtl">
     <Breadcrumbs
       items={[
-        { label: "Inicio", href: "/" },
-        { label: "Blog", href: "/blog" },
+        { label: "الرئيسية", href: "/" },
+        { label: "المقالات", href: "/blog" },
         { label: post.title },
       ]}
     />
@@ -32,37 +32,36 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
       class="w-full h-96 object-cover rounded-2xl shadow mb-8"
     />
 
-    <h1 class="text-3xl md:text-4xl font-bold text-[#2F855A] mb-4">
+    <h1 class="text-3xl md:text-4xl font-bold text-[#2F855A] mb-4 text-right">
       {post.title}
     </h1>
 
-    <p class="text-gray-500 text-sm mb-8">
-      {post.date} • {post.author}
+    <p class="text-gray-500 text-sm mb-8 text-right">
+      {post.date} • د. بهلولي
     </p>
 
     <div
-      class="prose prose-lg max-w-none text-gray-800"
+      class="prose prose-lg max-w-none text-gray-800 text-right leading-relaxed"
       set:html={post.content}
     />
 
     <a
       href="/blog"
-      class="inline-block my-6 px-6 py-2 bg-[#2F855A] text-white rounded-full hover:bg-[#096939] transition"
+      class="inline-block my-8 px-8 py-3 bg-[#2F855A] text-white rounded-full hover:bg-[#096939] transition font-bold"
     >
-      Volver al Blog
+      العودة للمقالات
     </a>
 
-    <!-- Artículos relacionados -->
     {
       relatedPosts.length > 0 && (
-        <section class="mt-2">
-          <h2 class="text-2xl md:text-3xl font-bold text-[#2F855A] mb-6">
-            Artículos Relacionados
+        <section class="mt-12 border-t pt-10">
+          <h2 class="text-2xl md:text-3xl font-bold text-[#2F855A] mb-8 text-right">
+            مقالات قد تهمك
           </h2>
 
           <div class="grid gap-6 md:grid-cols-2">
             {relatedPosts.map((p) => (
-              <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
+              <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
                 <a href={`/blog/${p.slug}`} class="block">
                   <img
                     src={p.image}
@@ -70,13 +69,13 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
                     class="w-full h-48 object-cover"
                   />
                 </a>
-                <div class="p-4 flex flex-col justify-between h-full">
-                  <h3 class="text-lg font-bold text-[#2F855A] mb-2">
+                <div class="p-5 flex flex-col flex-grow text-right">
+                  <h3 class="text-lg font-bold text-[#2F855A] mb-3">
                     <a href={`/blog/${p.slug}`} class="hover:underline">
                       {p.title}
                     </a>
                   </h3>
-                  <p class="text-gray-600 text-sm">{p.description}</p>
+                  <p class="text-gray-600 text-sm line-clamp-2 mb-4">{p.description}</p>
                 </div>
               </article>
             ))}
