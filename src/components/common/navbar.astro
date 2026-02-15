@@ -1,33 +1,11 @@
-<img src="/logo.svg" alt="Logo" class="w-12 h-12" />
-      </div>
-    </a> 
+<nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50 mb-5">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="/" class="flex items-center">
+      <div class="flex flex-col items-center md:items-start text-center md:text-left">
+        <img src="/logo-bahlouli.png" alt="عيادة الدكتور بهلولي" class="w-12 h-12 object-contain" />
+      </div>
+    </a>
 
-    <ul class="hidden md:flex items-center space-x-14 space-x-reverse">
-      <li>
-        <a href="/" class="text-gray-700 font-bold hover:text-[#2F855A] transition-colors">الرئيسية</a>
-      </li>
-      <li>
-        <a href="/blog" class="text-gray-700 font-bold hover:text-[#2F855A] transition-colors">المقالات</a>
-      </li>
-      <li>
-        <a href="/contact" class="px-8 py-2.5 text-white font-semibold rounded-full bg-[#2F855A] hover:bg-[#186e43] transition shadow-md">
-          اتصل بنا
-        </a>
-      </li>
-    </ul>
-
-    <div class="md:hidden">
-      <input id="menu-toggle" type="checkbox" class="peer hidden" />
-      <label for="menu-toggle" class="cursor-pointer">
-        <svg class="h-8 w-8 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </label>
-    </div>
-  </div>
-</nav>
-
-    <!-- Links md+ -->
     <ul class="hidden md:flex space-x-8">
       <li>
         <a
@@ -61,13 +39,10 @@
       </li>
     </ul>
 
-    <!-- Menú hamburguesa móvil -->
     <div class="md:hidden relative">
       <input id="menu-toggle" type="checkbox" class="peer hidden" />
 
-      <!-- Botón hamburguesa / cierre -->
       <label for="menu-toggle" class="cursor-pointer z-50 flex items-center">
-        <!-- menu móvil  -->
         <svg
           class="h-6 w-6 text-gray-700 peer-checked:hidden"
           fill="none"
@@ -82,7 +57,6 @@
             d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
 
-        <!-- X -->
         <svg
           class="h-6 w-6 text-gray-700 hidden peer-checked:block"
           fill="none"
@@ -98,17 +72,14 @@
         </svg>
       </label>
 
-      <!-- Overlay semi-transparente -->
       <label
         for="menu-toggle"
         class="fixed inset-0 bg-black/60 hidden peer-checked:block cursor-pointer z-40"
       ></label>
 
-      <!-- Menú lateral -->
       <div
         class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 peer-checked:translate-x-0 z-50"
       >
-        <!-- Botón de cierre -->
         <div class="flex justify-end p-4">
           <label for="menu-toggle" class="cursor-pointer">
             <svg
@@ -147,7 +118,7 @@
               href="/contact"
               class="px-4 py-2 text-white font-semibold rounded-lg bg-[#2F855A] hover:bg-[#186e43] transition"
             >
-              Contact
+              اتصل بنا
             </a>
           </li>
         </ul>
